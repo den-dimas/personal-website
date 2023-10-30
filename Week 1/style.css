@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.navbar {
+  background-color: #999;
+  color: #fff;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5em 8em;
+  font-weight: bold;
+}
+
+.navbar-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.main {
+  margin: 2.5rem 8em;
+}
+.main-contact {
+  text-align: center;
+  font-size: 2em;
+}
+
+.main-contact-input {
+  margin: 0.5em 0;
+}
+
+#form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit_button {
+  width: auto;
+  padding: 10px 20px;
+  border: none;
+  /* border-radius: 5px; */
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.5em 0;
+  font-size: 1rem;
+}
+
+#mode_button {
+  background-color: #222;
+  color: #fff;
+}
+
+.form-title {
+  font-size: 2rem;
+  color: rgb(24, 24, 24);
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem 2px;
+  background: rgb(24, 24, 24);
+  color: rgb(240, 240, 240);
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#subject {
+  outline: none;
+  border: none;
+  border-bottom: solid rgb(24, 24, 24) 2px;
+  background: rgb(240, 240, 240);
+  width: 32rem;
+  height: 2rem;
+  padding: 0 1rem;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+}
+
+#body {
+  outline: none;
+  border: none;
+  border-bottom: solid rgb(24, 24, 24) 2px;
+  background: rgb(240, 240, 240);
+  width: 32rem;
+  height: 16rem;
+  padding: 0 1rem;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  resize: none;
+}
+
+.btn-submit,
+.btn-mode {
+  outline: none;
+  border: none;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  padding: 10px 20px;
+  background: rgb(24, 24, 24);
+  color: rgb(240, 240, 240);
+  font-size: 1rem;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-submit:hover,
+.btn-mode:hover {
+  transform: scale(0.9);
+}
