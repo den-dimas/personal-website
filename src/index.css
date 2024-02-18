@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-blue-1 font-jose overflow-x-hidden scroll-smooth;
+  }
+
+  * {
+    user-select: none;
+  }
+}
