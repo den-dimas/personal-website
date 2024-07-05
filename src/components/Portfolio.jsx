@@ -58,7 +58,7 @@ const data = [
     title: "Lab Karsa Website",
     description:
       "Building the Front End side for Lab Karsa using Next.js and Tailwind. Lab Karsa is a project that digitalize a laboratory process starting from receiving projects all the way to writing reports.",
-    link: "https://github.com/ExerciseFTUI/KarsaBuanaLab-FE",
+    link: "",
     date: "September 2023 - February 2024",
   },
 ]
