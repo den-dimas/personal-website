@@ -11,3 +11,12 @@
     user-select: none;
   }
 }
+
+@layer components {
+}
+
+@layer utilities {
+  .NDA:hover {
+    @apply text-red-700;
+  }
+}

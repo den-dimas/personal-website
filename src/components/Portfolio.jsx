@@ -1,35 +1,45 @@
 export default function Portfolio() {
   return (
-    <div className="flex flex-col gap-6">
-      {data.map((p, i) => (
-        <div key={i} className="space-y-2">
-          <div className="flex">
-            <h1 className="font-bold mr-2">{i + 1}. </h1>
-            <div className="flex max-[540px]:flex-col">
-              <h1 className="font-bold">{p.title}</h1>
-              <span className="mx-2 max-[540px]:hidden">-</span>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative before:absolute before:bottom-1 before:w-full before:bg-black before:h-[2px]"
-                href={p.link}
-              >
-                {p.title} Github Link
-              </a>
+    <div className="">
+      <p className="mb-4 text-xs">
+        *hovered red projects means the code is on NDA
+      </p>
+
+      <div className="flex flex-col gap-6">
+        {data.map((p, i) => (
+          <div key={i} className="space-y-2">
+            <div className="flex">
+              <h1 className="font-bold mr-2">{i + 1}. </h1>
+              <div className="flex max-[540px]:flex-col">
+                <a
+                  className={
+                    "font-bold" +
+                    " " +
+                    (!!p.link
+                      ? "relative before:absolute before:bottom-1 before:w-full before:bg-black before:h-[2px]"
+                      : "NDA")
+                  }
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {p.title}
+                </a>
+              </div>
             </div>
+            <p className="text-justify ml-6">
+              <span className="mr-8" />
+              {p.description}
+            </p>
+            <p className="ml-6">
+              <b>Duration: </b>
+              <i>{p.date}</i>
+            </p>
           </div>
-          <p className="text-justify ml-6">
-            <span className="mr-8" />
-            {p.description}
-          </p>
-          <p className="ml-6">
-            <b>Duration: </b>
-            <i>{p.date}</i>
-          </p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
 const data = [
@@ -61,4 +71,11 @@ const data = [
     link: "",
     date: "September 2023 - February 2024",
   },
-]
+  {
+    title: "Bluetooth Positioning System",
+    description:
+      "Building a React Native mobile apps that can scan an IoT Beacon and shows the current position of the user. This app also has a map and track user location using GPS with help of MapBox API.",
+    link: "https://github.com/EXERCISE-FTUI/Bluetooth-Positioning",
+    date: "April 2023 - June 2024",
+  },
+];
